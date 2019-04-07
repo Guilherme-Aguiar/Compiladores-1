@@ -1,0 +1,7 @@
+3. A entrada Minha Alegria deve ser aceita? Qual a dificuldade para que ela seja aceita?
+
+r = Sim, pois a entrada não pode conter letras maíusculas após uma minúscula, o enunciado
+    permite uma letra maíuscula após um espaço em branco. A dificuldade aparece quando um espaço
+    ocorre após uma minuscula, se ele continuar no mesmo estado e for seguido por uma maiuscula,
+    ele entraria no estado que causa a não aceitação da entrada, para resolver este problema,
+    faz-se necessária a criação de um estado para os espaços em branco.

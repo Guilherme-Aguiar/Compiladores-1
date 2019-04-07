@@ -25,19 +25,16 @@ def main():
     entrada = list(entrada)
 
     trans(dic, entrada, estadosFinais, estadoInicial)
-    print("rejected")
+    print("nao aceito")
 
 def trans(tabtrans, entrada, final, inicial):
-    print(entrada)
     for i in tabtrans[inicial][entrada[0]]: 
         inicial = i
-        print(entrada[0], inicial)
         if len(entrada)==1:
             if (str(inicial) in str(final)):
-                print("accepted")
+                print("aceito")
                 sys.exit()
             else:
-                print('continue')
                 continue
         trans(tabtrans, entrada[1:], final, inicial) 
 
